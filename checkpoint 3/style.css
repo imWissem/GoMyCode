@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: 'Roboto';font-size: 22px;
+    background-color: black;
+}
+/* navbar styling */
+
+.navbar .menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+}
+
+.navbar .menu li {float: right;}
+
+.navbar .menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar .menu li a:hover:not(.active) {background-color: #111;}
+
+.navbar .menu  li a.active {background-color: #00b3b3;}
+.navbar .menu .left {float: left;}
+.navbar .menu .left span{color:#00b3b3 ; }
+
+@media screen and (max-width: 600px) {
+    .navbar .menu  li.left, 
+    .navbar .menu  li {float: none;}
+}
+
+/* home styling */
+.home{
+    display: flex;
+    background: url("theme.jfif") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 300px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 200px;
+    font-weight: 600;
+    margin-right: -3px;
+}
+
+/* know me styling */
+.know{
+    background-color: black;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color:#00b3b3 ;
+}
+
+/* desription styling */
+.description{
+    background-color: black;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color:white ;
+}
+
+/*my work styling*/
+.work{
+    background: url("theme.jfif") no-repeat center;
+    height: 50vh;
+    min-height: 100px;
+    background-size: cover;
+    background-attachment: fixed ;
+}
+.work h3{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color:white ;
+}
+.work .ex{
+    display: flex;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color:white ;
+}
+.work p a{
+    color: white;
+    text-decoration: none;
+}
+.work p a:hover{
+    text-decoration: underline;
+}
+
+/* resume styling */
+.resume h3{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #00b3b3;
+}
+.resume table{
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color:white ;
+}
+
+/* contact styling */
+.contact{
+    background: url("theme.jfif") no-repeat center;
+    height: 50vh;
+    min-height: 100px;
+    background-size: cover;
+    background-attachment: fixed ;
+}
+
+.contact h3{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #00b3b3;
+}
+
+.contact table{
+    border-style: dashed ; 
+    width: 60%;
+    height: inherit;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color:white ;
+}
+
+/* footer styling */
+footer{ 
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: #00b3b3;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}

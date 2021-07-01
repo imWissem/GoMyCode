@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>portfolio</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul class="menu">
+                <li class="left"><a href="#">Portfo<span>lio.</span></a></li>
+                <li><a class="active" href="#home">home</a></li>
+                <li><a href="#about">about me</a></li>
+                <li><a href="#work">my work</a></li>
+                <li><a href="#resume">resume</a></li>
+                <li><a href="#contact">contact</a></li>
+                </ul>
+                </nav>
+           
+        </header>
+        
+        <main>
+            <a name="home"></a>
+        <h1 class="home">Hello ! <br> i'm wissem</h1>
+        <a name="about"></a>
+        <section class="know">
+            <h3>know me : </h3>
+            <p>" im a computer science student , passionat about coding <br>
+                and tech and trying to build a creer out of it . "
+            </p>  
+        </section>
+
+        <a name="work"></a>
+        <section class="work">
+            <h3 class>my work : </h3> <br>
+            <div class="ex">
+            <div>
+                    <img src="thumbnail.png" alt="project sneak peack" width="200" height="98">
+                    <p> <b>project title</b><br> a small descriptive paragraph about the work ,<a href="project.html"> Read More... </a> </p>
+            </div>
+            <div>
+                <img src="thumbnail.png" alt="project sneak peack" width="200" height="98">
+                <p> <b>project title</b><br> a small descriptive paragraph about the work ,<a href="project.html"> Read More... </a> </p>
+            </div>
+            <div>
+                <img src="thumbnail.png" alt="project sneak peack" width="200" height="98">
+                <p> <b>project title</b><br> a small descriptive paragraph about the work ,<a href="project.html"> Read More... </a> </p>
+            </div>
+            </div>
+        </section>
+        
+        <a name="resume"></a>
+        <section class="resume">
+            <h3>my resume : </h3>
+            <table>
+                <tr>
+                    <th>full name : </th>
+                    <td>Wissem Zaiem</td>
+                </tr>
+                <tr>
+                    <th>birth date : </th>
+                    <td>17/05/2000</td>
+                </tr>
+                <tr>
+                    <th>location : </th>
+                    <td>Bizert,Tunis</td>
+                </tr>
+                <tr>
+                    <th>languages : </th>
+                    <td>
+                        <dl>
+                            <dt>fluent in : </dt>
+                            <dd>arabic / english</dd>
+                        </dl>
+                        <dl>
+                            <dt>intermediate in : </dt>
+                            <dd>german / french</dd>
+                        </dl>
+                        <dl>
+                            <dt>beginner in : </dt>
+                            <dd>italian</dd>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <th>studies : </th>
+                    <td>
+                        <dl>
+                            <dt>june,2019 : </dt>
+                            <dd>earned my bac certifecat in computer science</dd>
+                            <dt>july,2019 -> october,2019 : </dt>
+                            <dd>learned the german language in "Goeth-Institut Tunisie" <br>
+                            and obtained the "A2 level" certifecat </dd>
+                            <dt>november,2020 -> december,2020 : </dt>
+                            <dd>experienced "La piscine" studiying method in "ecole 42" </dd>
+                            <dt>october,2020 -> present : </dt>
+                            <dd>studiying computer scinece in "universitè centrale"</dd>
+                            <dt>june,2021 -> present : </dt>
+                            <dd>studiying Fullstack development in "GoMyCode"</dd> 
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <th>programming <br> languages : </th>
+                    <td>
+                        <ul type="disc">
+                            <li>c/c++</li>
+                            <li>Golang</li>
+                            <li>html</li>
+                            <li>SQL</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>software : </th>
+                    <td>
+                        <ul type="square">
+                            <li>access</li>
+                            <li>excel , powerpoint and word</li>
+                            <li>adobe photoshop</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <a name="contact"> </a>
+        <section class="contact">
+            <h3>contact me :</h3>
+            <form>
+                <form id="form_1">
+                    <table>
+                    <tr>
+                    <th><label for="n">Name</label></th>
+                    <td><input for="n" type="text" name="name" placeholder="your name"></td>
+                    </tr>
+
+                    <tr>
+                    <th><label for="s">Subject</label></th>
+                    <td><input for="s" type="text" name="subject" placeholder="your subject" ></td>
+                    </tr>
+
+                    <tr>
+                    <th><label for="e">Email</label></th>
+                    <td><input for="m" type="email" name="email" placeholder="mail adress"></td>
+                    </tr>
+
+                    <tr>
+                    <th><label for="m">Message</label></th>
+                    <td><textarea for="m" name="message" placeholder="what is your message ?"></textarea></td>
+                    <tr>
+                    </table>
+    
+                    <input id="submit" type="submit" value="Send">
+                    <input id="reset" type="reset" value="delete">
+                </form>
+            </form>
+        </section>
+
+        <hr>
+        <a class="return" href="#home"><b>take me home !</b></a>
+        
+        </main>
+        <footer>
+            <span>Created By <a href="#home">Wissem Zaiem</a> | 
+                <span class="date"></span> - 2021</span>
+        </footer>
+
+    </body>
+</html>
