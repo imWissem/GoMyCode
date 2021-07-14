@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>shopping cart</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="https://kit.fontawesome.com/1b4e907a2e.js"></script>
+    </head>
+    <body>  
+        <header>
+            <nav>
+                <img id="logo" src="data:image/png;base64,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">
+                <ul>
+                    <li><a src="#">Home</a></li>
+                    <li><a src="#">Type</a></li>
+                    <li><a src="#" class="active">Cart</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="top">
+                <div class="title"><h1> shopping cart :</h1></div>
+                <div class="price"><p>price</p></div>
+            </section>
+            <section class="products">
+
+
+                <div class="item it-0">
+                    <div class="it-img"><img src="https://m.media-amazon.com/images/I/91hUer84PpL._AC_AA180_.jpg"></div>
+                    <div class="it-info">
+                        <div class="it-text">
+                            <p classs="book">JavaScript: The Definitive Guide: Master the World's Most-Used Programming Language </p>
+                            <p class="writer">by David Flanagan </p>
+                        </div>
+                        <div class="it-icons">
+                            <div class="qte-b"> 
+                            <button class="minus-btn-0">-</button>
+                            <input type="text" class="qte qte-0">
+                            <button class="plus-btn-0" id="pb-0">+</button>
+                            </div> <div class="b">    
+                                <i class="far fa-heart fa-2x"></i>
+                                <i class="far fa-times-circle fa-2x icon-0"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="it-price"><p> <span class="p-0"></span> $</p></div>
+                </div>
+
+                <div class="item it-1">
+                    <div class="it-img"><img src="https://m.media-amazon.com/images/I/619M-4xNINL._AC_AA180_.jpg"></div>
+                    <div class="it-info">
+                        <div class="it-text">
+                            <p classs="book">Cracking the Coding Interview : 189 Programming Questions and Solutions </p>
+                            <p class="writer">by Gayle Laakmann McDowell  </p>
+                        </div>
+                        <div class="it-icons">
+                            <div class="qte-b"> 
+                            <button class="minus-btn-1">-</button>
+                            <input type="text" class="qte qte-1">
+                            <button class="plus-btn-1">+</button>
+                            </div> <div class="b">    
+                                <i class="far fa-heart fa-2x"></i>
+                                <i class="far fa-times-circle fa-2x icon-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="it-price"><p> <span class="p-1"></span> $</p></div>
+                </div>
+
+
+                <div class="item it-2">
+                    <div class="it-img"><img src="https://m.media-amazon.com/images/I/91asIC1fRwL._AC_AA180_.jpg"></div>
+                    <div class="it-info">
+                        <div class="it-text">
+                            <p classs="book">Eloquent JavaScript, 3rd Edition: A Modern Introduction to Programming </p>
+                            <p class="writer">by Marijn Haverbeke </p>
+                        </div>
+                        <div class="it-icons">
+                            <div class="qte-b"> 
+                            <button class="minus-btn-2">-</button>
+                            <input type="text" class="qte qte-2">
+                            <button class="plus-btn-2">+</button>
+                            </div> <div class="b">    
+                                <i class="far fa-heart fa-2x"></i>
+                                <i class="far fa-times-circle fa-2x icon-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="it-price"><p> <span class="p-2"></span> $</p></div>
+                </div>
+
+
+                <div class="item it-3">
+                    <div class="it-img"><img src="https://m.media-amazon.com/images/I/71OcrNWJv3L._AC_AA180_.jpg"></div>
+                    <div class="it-info">
+                        <div class="it-text">
+                            <p classs="book">Secrets of the JavaScript Ninja </p>
+                            <p class="writer">by John Resig </p>
+                        </div>
+                        <div class="it-icons">
+                            <div class="qte-b"> 
+                            <button class="minus-btn-3">-</button>
+                            <input type="text" class="qte qte-3">
+                            <button class="plus-btn-3">+</button>
+                            </div> <div class="b">    
+                                <i class="far fa-heart fa-2x"></i>
+                                <i class="far fa-times-circle fa-2x icon-3"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="it-price"><p> <span class="p-3"></span> $</p></div>
+                </div>
+
+
+                <div class="item it-4">
+                    <div class="it-img"><img src="https://m.media-amazon.com/images/I/71WEnhQFKLL._AC_AA180_.jpg"></div>
+                    <div class="it-info">
+                        <div class="it-text">
+                            <p classs="book">JavaScript Everywhere: Building Cross-Platform Applications with GraphQL, React, React Native, and Electron </p>
+                            <p class="writer">by Adam D. Scott </p>
+                        </div>
+                        <div class="it-icons">
+                            <div class="qte-b"> 
+                            <button class="minus-btn-4">-</button>
+                            <input type="text" class="qte qte-4" >
+                            <button class="plus-btn-4">+</button>
+                            </div> <div class="b">    
+                                <i class="far fa-heart fa-2x"></i>
+                                <i class="far fa-times-circle fa-2x icon-4"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="it-price"><p> <span class="p-4"></span> $</p></div>
+                </div>
+            
+
+            </section>
+            <section class="total">
+                <p>you have <span class="nbr"></span> items in your Cart</p>
+                <p>your total is : <span class="tp"></span> $</p>
+            </section>
+        </main>
+        <footer>
+            <span>Created By <a href="#home">Wissem Zaiem</a> |<span class="date"></span> - 2021</span>
+        </footer>
+
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
