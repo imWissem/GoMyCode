@@ -1,0 +1,51 @@
+algorithm distinct_h
+var
+    t1,t2 : array [10] of integer ;
+    key : array [20] of integer ;
+    ht := hash_table<integer,integer>;
+    i,c,ov,n1,n2 : integer;
+
+begin
+// enter the tables 
+    write ("enter length of t1") ; read(t1[i]); 
+    write ("enter length of t2") ; read(t2[i]);
+    for i from 1 to n1 do 
+        write("t1[,i,"]= ") ; read(n1); 
+    end_for
+    for i from 1 to n2 do 
+        write("t2[,i,"]= ") ; read(n2); 
+    end_for
+
+// insert t1 and t2 in ht
+    for i from 1 to n1 do 
+        if (ht.lookup(t1[i]) = true) then
+            c := ht.get(t1[i]);
+            ht.insert(t1[i],c+1);
+        else 
+            ht.insert(t1[i],1);
+        end_if
+    end_for
+    for i from 1 to n2 do 
+        if (ht.lookup(t2[i]) = true) then
+            c := ht.get(t2[i]);
+            ht.insert(t2[i],c+1);
+        else 
+            ht.insert(t2[i],1);
+        end_if
+    end_for
+
+
+
+//calculate the sum of the overlapping elements 
+    ov := 0 ;
+    key := ht.getKeys();
+    for i from 1 to n1+n2 do 
+        if (ht.get(key[i]) > 1) then 
+            ov := ov+key[i];
+        end if 
+    end_for
+
+// display the result 
+write("sum of the overlapping elements = ",ov) ;
+
+end
