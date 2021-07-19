@@ -1,0 +1,43 @@
+algorithm overlapping_t
+var
+    t1,t2 : array [10] of integer ;
+    i,j,ov,n1,n2 : integer;
+    test : booleen ;
+
+begin
+// enter the tables 
+    write ("enter length of t1") ; read(n1); 
+    write ("enter length of t2") ; read(n2);
+    for i from 1 to n1 do 
+        write("t1[",i,"]= ") ; read(t1[i]); 
+    end_for
+    for i from 1 to n2 do 
+        write("t2[",i,"]= ") ; read(t2[i]); 
+    end_for
+
+//calculate the sum of the destinct elements 
+    ov := 0 ;
+    for i from 1 to n1 do
+        test := false;
+        for j from 1 to n2 do
+            if(t1[i] = t2[j]) then
+                test := true;
+                ov := ov + t1[i] ;
+            end_if 
+        end_for 
+    end_for
+
+    for i from 1 to n2 do
+        test := false;
+        for j from 1 to n1 do
+            if(t2[i] = t1[j]) then
+                test := true;
+                ov := ov + t2[i];
+            end_if 
+        end_for 
+    end_for
+
+// display the result 
+write("sum of the overlapping elements = ",ov) ;
+
+end
