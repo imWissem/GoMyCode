@@ -1,0 +1,43 @@
+procedure enter_table(var t : array[10] of integer , var n :integer) 
+var i:integer 
+begin 
+    write ("enter length of t") ; read(n); 
+    for i from 0 to n-1 do 
+        write("t[",i,"]= ") ; read(t[i]); 
+    end_for
+end_procedure 
+
+procedure display_table(t : array[10] of integer , n :integer) 
+var i:integer 
+begin 
+    for i from 0 to n-1 do 
+        write("t[",i,"]= ",t[i]) ; 
+    end_for
+end_procedure 
+
+procedure insertion_sort( var t : array[10] of integer ,n :integer )
+var i,j,k:integer 
+begin 
+    for i from 1 to n do 
+        k := t[i] ; 
+        j := j-1;
+        while (j>=0 and t[j]>key) do 
+            t[j+1] = t[j] ;
+            j = j+1 ;
+        end_while 
+        t[j+1] := k ;
+    end_for
+end_procedure
+
+
+
+algorithm in_sr
+var 
+    t : array [10] of integer ;
+    n : integer; 
+
+begin
+   enter_table(t,n) ;
+   insertion_sort(t,n) ;
+   display_table(t,n); 
+end 
