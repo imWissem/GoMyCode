@@ -1,0 +1,45 @@
+
+procedure dot_product(t1,t2 : array [10] of integer, i,n1,n2:integer, var dot :integer)
+var
+begin 
+    dot:=0;
+    if (n1 != n2) then 
+        dot:= dot + 1 ;
+    else 
+        dot := dot + (v1[i]*v2[i]) ;
+    end_if
+end_procedure
+
+
+
+
+
+algorithm orth_vectors 
+var 
+    t1,t2 : array [10] of integer ;
+    dot,n1,n2 : integer; 
+
+begin
+
+// enter the vectors 
+    write ("enter length of v1") ; read(n1); 
+    write ("enter length of v2") ; read(n2);
+    for i from 1 to n1 do 
+        write("tv[",i,"]= ") ; read(v1[i]); 
+    end_for
+    for i from 1 to n2 do 
+        write("v2[",i,"]= ") ; read(v2[i]); 
+    end_for
+
+// check if the vectors are orthogonal and display the result 
+    for i from 1 to n do 
+    // call the procedure
+    dot_product(v1,v2,n1,n2,dot,i);
+    if (dot = 0) then
+        write(v1[i]," and ",V2[i]," are orthogonal \n");
+    else 
+        write(v1[i]," and ",V2[i]," are not orthogonal \n");
+    end_if
+    end_for 
+
+end 
